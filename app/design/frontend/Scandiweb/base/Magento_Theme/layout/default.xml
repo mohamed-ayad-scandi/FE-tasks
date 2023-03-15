@@ -3,8 +3,8 @@
     <body>
 
         <referenceContainer name="header.container">
-            <container name="custom_header_container" htmlTag="div" before='-'>
-                <block  class="Magento\Framework\View\Element\Template" name="custom_header" as="custom_header" template="Magento_Theme::html/customheader.phtml" before="-"/>
+            <container name="custom_header_container" before='-'>
+                <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="custom_header" as="custom_header" template="Magento_Theme::html/customheader.phtml" before="-"/>
             </container>
         </referenceContainer>
 
